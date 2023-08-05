@@ -1,7 +1,54 @@
 import Image from "next/image";
-import HeroImage from "../public/images/banner.jpg";
 import Link from "next/link";
+
+import HeroImage from "../public/images/banner.jpg";
+import CategoryBags from "../public/images/categories/bags.jpg";
+import CategoryFurniture from "../public/images/categories/furniture.jpg";
+import CategoryGlasses from "../public/images/categories/glasses.jpg";
+import CategoryHeadphones from "../public/images/categories/headphones.jpg";
+import CategoryPhones from "../public/images/categories/phone.jpg";
+import CategoryShoes from "../public/images/categories/shoes.jpg";
+
 export default function Home() {
+  const categories = [
+    {
+      label: "Bags",
+      image: CategoryBags,
+      alt: "Bags stack over each other",
+      href: "/category/bags",
+    },
+    {
+      label: "Furniture",
+      image: CategoryFurniture,
+      alt: "A couch in a bright room",
+      href: "/category/furniture",
+    },
+    {
+      label: "Glasses",
+      image: CategoryGlasses,
+      alt: "A pair of glasses on a table",
+      href: "/category/glasses",
+    },
+    {
+      label: "Headphones",
+      image: CategoryHeadphones,
+      alt: "Headphones over a bright background",
+      href: "/category/headphones",
+    },
+    {
+      label: "Phones",
+      image: CategoryPhones,
+      alt: "An Iphone on a table",
+      href: "/category/phones",
+    },
+    {
+      label: "Shoes",
+      image: CategoryShoes,
+      alt: "A pair of Nike shoes",
+      href: "/category/shoes",
+    },
+  ];
+
   return (
     <main>
       {/* Hero */}
@@ -30,15 +77,15 @@ export default function Home() {
         <h1 className="text-3xl font-bold mb-10 text-slate-900">
           Shop Our Top Categories
         </h1>
-        {/* <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-5 cursor-pointer">
-          {categoryLinks.map((category, index) => (
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-5 cursor-pointer">
+          {categories.map((category, index) => (
             <Link
               key={index}
               className="text-2xl text-indigo-950 font-bold text-center group"
               href={category.href}>
               <div className="h-[250px] w-full rounded-lg overflow-hidden mb-3">
                 <Image
-                  className="w-full h-full object-contain rounded-lgtransition-transform duration-150 ease-in-out group-hover:scale-110"
+                  className="w-full h-full object-cover rounded-lg transition-transform duration-150 ease-in-out group-hover:scale-110"
                   alt={category.alt}
                   src={category.image}
                 />
@@ -49,7 +96,7 @@ export default function Home() {
               </span>
             </Link>
           ))}
-        </div> */}
+        </div>
       </div>
     </main>
   );
