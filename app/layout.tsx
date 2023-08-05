@@ -6,8 +6,8 @@ import { Navbar } from "@/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Bookly",
-  description: "Shop fiction and non-fiction books online",
+  title: "ShopSwift",
+  description: "Shop diverse products on ShopSwift!",
   icons: {
     icon: "./icon.svg",
   },
