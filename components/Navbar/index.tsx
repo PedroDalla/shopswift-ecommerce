@@ -22,7 +22,7 @@ export const Navbar: React.FC = () => {
 
   return (
     <nav className="h-[80px] sticky top-0 left-0 w-full bg-white flex justify-center text-md z-50">
-      <div className="flex gap-10 justify-between items-center h-full w-full py-5 px-5 xl:px-0 xl:max-w-[1200px] 2xl:max-w-[1400px]">
+      <div className="flex gap-10 justify-between items-center h-full w-full py-5 px-5 xl:px-0 xl:max-w-[1200px] 2xl:max-w-[1400px] border-b-2 border-b-slate-100">
         {/* ShopSwift Logo Section */}
         <div className="hidden md:block">
           <a className="flex gap-2 justify-center items-center bg-gradient-to-r from-indigo-950 to-indigo-700 bg-clip-text text-transparent">

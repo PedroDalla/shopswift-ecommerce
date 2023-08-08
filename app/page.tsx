@@ -61,7 +61,7 @@ export default function Home() {
             Explore the largest collection of products at the lowest price
             available.
           </p>
-          <button className="rounded-full px-6 py-3 bg-indigo-50 hover:bg-indigo-100 w-fit font-semibold hover:-translate-y-1 focus:-translate-y-1 transition-all duration-75 ease-in-out">
+          <button className="rounded-full px-6 py-3 bg-indigo-50 hover:bg-indigo-100 w-fit font-semibold hover:-translate-y-1 focus:-translate-y-1 transition-all duration-150 ease-in-out">
             Learn More
           </button>
         </div>
